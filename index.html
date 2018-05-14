@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Een nieuwe site voor de EUR: webtoegankelijkheid in praktijk</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+          <h1>De nieuwe EUR.nl</h1>
+          <p>Webtoegankelijkheid in praktijk</p>
+        </section>
+
+				<section>
+          <h2>In deze presentatie:</h2>
+					<ol>
+						<li>Wie ben ik?</li>
+						<li>Waarom is de nieuwe site voor de EUR interessant?</li>
+						<li>Het proces</li>
+						<li>Het product</li>
+					</ol>
+				</section>
+
+				<section>
+          <section>
+            <h2>Wie ben ik?</h2>
+            <ul>
+              <li>Developer bij ezCompany, vestiging Utrecht</li>
+              <li>Lead developer voor eur.nl</li>
+              <li>Fanatiek Drupal contributor</li>
+            </ul>
+          </section>
+        </section>
+
+				<section>
+          <section>
+            <h2>Interessant?</h2>
+            <ol>
+              <li>Aanbesteding van enkele miljoenen</li>
+              <li>Korte doorlooptijd van 6 maanden</li>
+              <li>Meerdere multidisciplinaire scrum-teams</li>
+              <li>Zowel content- als structuurwijzigingen</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Aanbestedingsproces</h2>
+            <ul>
+              <li>Twee teams van 7 met elk een designer, front-end en back-end developers</li>
+              <li>Een scrum master</li>
+              <li>Aangevuld met 3 developers en een Product Owner van de EUR</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Contentmigratie</h2>
+            <ul>
+              <li>Alle content automatisch gemigreerd</li>
+              <li>Team handmatige nabewerking (30 fte)</li>
+              <li>Herstructurering navigatie en landingspagina's door redacteurs</li>
+            </ul>
+          </section>
+        </section>
+
+				<section>
+          <section>
+            <h2>Het proces</h2>
+            <ul>
+              <li>Toegankelijkheid in Definition of Done</li>
+              <li>Voorbereiding design</li>
+              <li>Testen binnen de sprint</li>
+              <li>Automatische monitoring van toegankelijkheid</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Definition of Done</h2>
+            <p>De User Story is getest op toegankelijkheid</p>
+          </section>
+
+          <section>
+            <h2>Wat werkt niet?</h2>
+            <ul>
+              <li>Design binnen de sprint</li>
+              <li>Kopieren uit oude applicatie</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Wat werkt wel?</h2>
+            <ul>
+              <li>Ontwikkel een toegankelijke huisstijl</li>
+              <li>Ontwikkel een living styleguide</li>
+              <li>Doe het de eerste keer goed</li>
+              <li>Zorg voor draagvlak in de organisatie</li>
+            </ul>
+          </section>
+        </section>
+
+				<section>
+          <section>
+            <h2>Het product</h2>
+            <ul>
+              <li>EUR.nl en 18 subsites live</li>
+              <li>Elke site een eigen palette</li>
+              <li>Van 80.000 naar 12.000 pagina's</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Hoofdnavigatie</h2>
+            <p>Extra uitklapmogelijkheid voor toetsenbordgebruikers</p>
+            <p><img width="600" src="images/eur-hoofdmenu.gif" alt="Screencapture van extra uitklapmogelijkheid voor toetsenbordgebruikers op eur.nl"></p>
+          </section>
+
+          <section>
+            <h2>Uitklappers</h2>
+            <p>Uitklappers met meerdere niveau's met toetsenbordondersteuning</p>
+            <p><img width="600" src="images/eur-uitklappers.gif" alt="Screencapture van uitklappers met meerdere niveau's met toetsenbordondersteuning op eur.nl"></p>
+          </section>
+
+          <section>
+            <h2>Living styleguide</h2>
+            <p>Ter ondersteuning van ontwerp en testers</p>
+            <p><img width="600" src="images/eur-paletten.gif" alt="Screencapture van living styleguide met wisselende paletten"></p>
+          </section>
+
+          <section>
+            <h2>Skip links</h2>
+            <p>Mogelijkheid om navigatie over te slaan voor toetsenbordgebruikers</p>
+            <p><img width="600" src="images/eur-skip-links.gif" alt="Screencapture van mogelijkheid om navigatie over te slaan voor toetsenbordgebruikers op eur.nl"></p>
+          </section>
+
+          <section>
+            <h2>Duidelijke focus styling</h2>
+            <pre><code data-trim data-noescape>
+//------------------------------------------------------------------------------
+// Outline. Temp solution for Jules.
+//------------------------------------------------------------------------------
+*:focus {
+  outline: .1rem solid #51CBEE;
+  box-shadow: inset 0 0 .5rem #51CBEE;
+  animation: outline-animate .1s linear 0s 1 normal;
+  animation-fill-mode: forwards;
+}
+            </code></pre>
+          </section>
+        </section>
+
+        <section>
+          <h2>Enthousiast?</h2>
+          <p>Kijk op <a href="https://ezcompany.nl">ezcompany.nl</a></p>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
